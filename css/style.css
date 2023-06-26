@@ -1,0 +1,172 @@
+:root{
+    --fs-base: 18px;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    background-color: rgb(101, 119, 136);
+    color: rgb(243, 247, 248);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: .5rem 1rem 3rem 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .choices{
+    display: flex;
+    gap: 1rem;
+}
+
+nav li{
+    justify-self: flex-start;
+    list-style-type: none;
+}
+
+.button a{
+    padding: .5rem 1rem;
+    color: rgb(101, 119, 136);
+    background-color: rgb(243, 247, 248);
+}
+
+nav a, .intro a{
+    text-decoration: none;
+    color: rgb(243, 247, 248);
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .5rem 2rem;
+}
+
+.intro p{
+    max-width: 800px;
+}
+
+.watch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+header span{
+    color: rgb(32, 1, 68);
+}
+
+
+
+/* header */
+
+/* section */
+section, .volunteer{
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* section */
+
+/* main */
+main{
+    background-color: rgb(182, 200, 216);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5rem 2.5rem;
+    gap: 2rem;
+}
+
+.sides{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.boxes{
+    background-color: rgb(78, 103, 126);
+    width: 300px;
+    height: 170px;
+}
+
+.sides p{
+    text-align: center;
+    max-width: 400px;
+}
+
+.lasth5{
+    padding: 10px 0;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    border: 1px solid rgb(78, 103, 126);
+}
+/* main */
+
+/* footer */
+.socials, .site, .contribute{
+    display: flex;
+    gap: .5rem;
+}
+
+footer, .last{
+    padding: 1rem 2rem;
+    background-color: rgb(15, 27, 39);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left, .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.right{
+    align-items: flex-end;
+}
+
+.last{
+    border-top: 1px solid white;
+}
+
+
+@media screen and (max-width: 400px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .left, .right{
+        align-items: center;
+    }
+}
+/* footer */
